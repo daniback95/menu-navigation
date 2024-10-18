@@ -9,5 +9,4 @@
 
 Navigation menu created with HTML and CSS
 
-https://github.com/user-attachments/assets/b543365c-a7b6-4b23-974b-a40c541ea186
-
+![navigationMenu](https://github.com/user-attachments/assets/4016bba2-581c-4d7f-bd97-bb330563bb2c)
