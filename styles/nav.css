@@ -1,0 +1,81 @@
+.nav {
+  width: max-content;
+  height: 90%;
+  padding: 2rem 1rem;
+  border-radius: .75rem;
+  background-color: var(--primary-color);
+
+  --grid-columns-nav: max-content 0fr;
+  --col-gap: initial
+}
+
+.nav:has(:hover), 
+.nav:hover {
+  --grid-columns-nav: max-content 1fr;
+  --col-gap: 1rem;
+}
+
+.nav__menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.nav__link {
+  display: grid;
+  grid-template-columns: var(--grid-columns-nav);
+  align-items: center;
+  column-gap: var(--col-gap);
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: .75rem;
+  color: var(--text-color);
+  transition: grid-template-columns .3s;
+}
+
+.nav__link:hover  {
+  background-color: var(--bg-color);
+}
+
+.nav__icon {
+  width: 2.25rem;
+}
+
+.nav__icon--user > img {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.nav__icon--user + .nav__text {
+  white-space: nowrap;
+}
+
+.nav__text {
+  overflow: hidden;
+}
+
+.nav__footer {
+  margin-block-start: auto;
+  position: relative;
+  margin-block-end: 12px;
+}
+
+.nav__footer::after {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  bottom: -6px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--text-color);
+}
+
+.nav__user-name {
+  font-weight: 700;
+}
+
+.nav__account {
+  font-weight: 300;
+  font-size: 12px;
+}
